@@ -1,0 +1,28 @@
+{
+	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
+	"type": "connection",
+	"id": "panasonic-lumix",
+	"name": "Panasonic Lumix",
+	"shortname": "Lumix",
+	"description": "Control Panasonic Lumix cameras over Wi-Fi",
+	"version": "1.1.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-panasonic-lumix.git",
+	"bugs": "https://github.com/bitfocus/companion-module-panasonic-lumix/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"runtime": {
+		"type": "node22",
+		"api": "nodejs-ipc",
+		"apiVersion": "2.0.4",
+		"entrypoint": "../src/main.js"
+	},
+	"legacyIds": [],
+	"manufacturer": "Panasonic",
+	"products": ["Lumix S5II", "Lumix S5IIX", "Lumix Wi-Fi cameras"],
+	"keywords": ["camera", "recording", "wifi"]
+}

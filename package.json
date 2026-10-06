@@ -1,7 +1,6 @@
 {
 	"name": "panasonic-lumix",
-	"version": "1.0.0",
-	"api_version": "1.0.0",
+	"version": "1.1.0",
 	"keywords": [
 		"Camera"
 	],
@@ -11,9 +10,11 @@
 	],
 	"shortname": "panasonic-lumix",
 	"description": "Companion module for Panasonic Lumix cameras",
-	"main": "src/index.js",
+	"main": "src/main.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"format": "prettier -w .",
+		"package": "companion-module-build",
+		"test": "node --test"
 	},
 	"author": "Joseph Adams <josephdadams@gmail.com>",
 	"license": "MIT",
@@ -24,5 +25,18 @@
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/bitfocus/companion-module-panasonic-lumix.git"
-	}
+	},
+	"engines": {
+		"node": "^22.20",
+		"yarn": "^4"
+	},
+	"dependencies": {
+		"@companion-module/base": "~2.0.4"
+	},
+	"devDependencies": {
+		"@companion-module/tools": "^3.1.0",
+		"prettier": "^3.8.3"
+	},
+	"prettier": "@companion-module/tools/.prettierrc.json",
+	"packageManager": "yarn@4.17.0"
 }
